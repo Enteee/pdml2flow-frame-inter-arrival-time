@@ -1,6 +1,5 @@
 # vim: set fenc=utf8 ts=4 sw=4 et :
 from pdml2flow.plugin import Plugin2
-from pdml2flow.flow import Flow
 from argparse import ArgumentParser
 
 from json import dumps
