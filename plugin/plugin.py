@@ -65,7 +65,7 @@ class Plugin(Plugin2):
     def frame_new(self, frame, flow):
         """Calculate and print the frame inter-arrival time."""
         if self._args.no_flow:
-            frame_time_now = _get_frame_time(frame)
+            frame_time_now = _get_frame_time(frame)[0]
 
             if not self._last_frame_time:
                 self._last_frame_time = frame_time_now
