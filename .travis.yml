@@ -24,10 +24,10 @@ after_success:
 before_deploy: 
 deploy: # https://docs.travis-ci.com/user/deployment/pypi/
   provider: pypi
-  user: 
+  user: Ente
   skip_existing: true
   password:
-    secure: 
+    secure: "LmLLDFSg0WLel2uJXiD3Exa3xzjRUz7lCqNySex3uKhpDXOL+qiZ0FHv8lSB0T/UXPQ4GlYnrawK9ATBMUV8kAox9Xg1KKYR66gG4+lA6jJJSkDObJXI67PLPDPhh7fXEtXHaiKo/IhbXYxpFQAtItJHFLHiymYIIArHyMUWndLwPVWUfQ7ZZ3zwOshFC1Lsoxm5nzjGXsjU6oAdAJuKqpCYsC3be7MkQ0dbiH8FqZsv+i4uIp4av4An8X3Q9D53GI2EulPGY4fc6N8AB7/8RWh06h6SXqSpM8WP1qlmPdJK2mhABYD36IL11SMY9Vc2kmp5uNQwEop0ZQ5rG3BJGhwIv61xziVgYGJQpaR1Bb4X/PMZbd/lgyZwnZ7KmH4t6wnKkP7Y3KdHiUbeVSdhs3St6UuITBzmcUzeK6IR8/J6eELwP7zFiJD08/GE26cnemvTiQZvkgGMDVTJXNqKd7FRLOQc8rgTUiUkquknIJc9yb0FWDdhM75RlWT+nXqrQsA8LpQ00ozSXnXQdh0KH4h4Xl93bpRMxEBNH9p2zHuivrxgl5Mp7usLOAu5UPbRGvKZyvgII7sreCGDVpYX8qRhWaE1SwybIUvb3aBwtYL28KQY4VSfCm6nnZcuS62SrKLzMiRDiduM/RJN93qrpR+9u9oNcHuU7zVFRiUrpHs="
   on:
     tags: true
     branch: master
