@@ -8,7 +8,7 @@ sudo pip install --upgrade -e "${TOPLEVEL}"
 
 cat <<EOF > "${TOPLEVEL}/README.md"
 # pdml2flow-frame-inter-arrival-time [![PyPI version](https://badge.fury.io/py/pdml2flow-frame-inter-arrival-time.svg)](https://badge.fury.io/py/pdml2flow-frame-inter-arrival-time) 
-_Calculates frame inter arrival times_
+_[pdml2flow] plugin to calculate frame inter arrival times_
 
 | Branch  | Build  | Coverage |
 | ------- | ------ | -------- |
