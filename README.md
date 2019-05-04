@@ -1,5 +1,5 @@
 # pdml2flow-frame-inter-arrival-time [![PyPI version](https://badge.fury.io/py/pdml2flow-frame-inter-arrival-time.svg)](https://badge.fury.io/py/pdml2flow-frame-inter-arrival-time) 
-_[pdml2flow] plugin to calculate frame inter arrival times_
+_Calculates frame inter arrival times_
 
 | Branch  | Build  | Coverage |
 | ------- | ------ | -------- |
@@ -12,6 +12,9 @@ _[pdml2flow] plugin to calculate frame inter arrival times_
   - 3.4
   - 3.5
   - 3.5-dev
+  - 3.6
+  - 3.6-dev
+  - 3.7-dev
   - nightly
 * [pip](https://pypi.python.org/pypi/pip)
 
@@ -46,6 +49,7 @@ $ tshark -r dump.capture -Tpdml | pdml2flow +frame-inter-arrival-time
 {"inter_arrival_times": [0.1608715057373047, 0.15995335578918457, 2.384185791015625e-07, 2.384185791015625e-07, 2.384185791015625e-07, 0.15888381004333496], "frames": null}
 {"inter_arrival_times": [0.16829872131347656, 0.0007762908935546875, 0.14913678169250488, 0.000125885009765625, 0.000736236572265625, 10.19379997253418], "frames": null}
 ```
+
 * Print inter arrival times with a different flow aggregation. For example by interface, if you captured from multiple interfaces:
 ```sh
 $ tshark -r dump.capture -Tpdml | pdml2flow -f frame.interface_name +frame-inter-arrival-time
@@ -53,7 +57,7 @@ $ tshark -r dump.capture -Tpdml | pdml2flow -f frame.interface_name +frame-inter
 ```
 
 * Print arrival times without flow aggregation:
-```
+```sh
 $ tshark -r dump.capture -Tpdml |  pdml2flow +frame-inter-arrival-time --no_flow
 0.0
 7.152557373046875e-07
